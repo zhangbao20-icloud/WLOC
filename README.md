@@ -97,15 +97,11 @@ https://wloc.guol.ccwu.cc/install/egern
 
 ---
 
-## 快捷指令（推荐，最方便）
-
-可以使用快捷指令直接切换 / 清除定位，也可以使用在线地图选址：
+## 使用方法与说明
 
 - **wloc 设置地理位置**：https://www.icloud.com/shortcuts/1f7d9f66a0b94e9ea27dfe8564a419ca
 - **wloc 清理恢复位置**：https://www.icloud.com/shortcuts/704652bc2ad14dbc8f1e14501a3af5e3
 - **在线地图选址**：https://wloc.guol.ccwu.cc/
-
-**用法**
 
 ### 方法一：快捷指令
 
