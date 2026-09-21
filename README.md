@@ -122,7 +122,7 @@ https://wloc.guol.ccwu.cc/install/egern
 
 > 使用在线地图选址前，请确认代理客户端已启用 WLOC 模块、MITM 已开启并信任证书，且 Safari 当前网络经过代理。
 
-> 前提：代理已开 + 模块已启用 + 信任 `gs-loc.apple.com`。快捷指令与在线地图选址两种方式可以任选其一；Worker / Pages 自部署方案仍保留，见下方。
+> 前提：代理已开启 + WLOC 模块已启用 + 已安装并信任代理客户端的 MITM 根证书；MITM 主机名需包含 `gs-loc.apple.com`、`gs-loc-cn.apple.com`。快捷指令与在线地图选址两种方式可以任选其一；Worker / Pages 自部署方案仍保留，见下方。
 
 ---
 
