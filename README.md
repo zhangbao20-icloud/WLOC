@@ -400,6 +400,7 @@ npx wrangler pages deploy . -c wrangler.jsonc
 
 ## 致谢
 
+- **原作者 / Jsforbaby**（https://t.me/Jsforbaby）— WLOC 原项目作者。当前维护版基于原项目公开代码继续整理、修复与维护，原始项目设计、主要实现及早期功能基础归功于原作者。
 - [proxypin-wloc-spoofer](https://github.com/FFF686868/proxypin-wloc-spoofer) - 原始 WLOC 定位修改思路 by FFF686868
 - [NSNanoCat/Util](https://github.com/NSNanoCat/util) - 跨平台脚本工具框架
 
