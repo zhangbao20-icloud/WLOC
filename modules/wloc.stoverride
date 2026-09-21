@@ -1,0 +1,36 @@
+name: Apple WLOC 定位修改
+desc: "修改 Apple 网络定位返回坐标 | 快捷指令(推荐): 设置地理位置 https://www.icloud.com/shortcuts/1f7d9f66a0b94e9ea27dfe8564a419ca 清理恢复位置 https://www.icloud.com/shortcuts/704652bc2ad14dbc8f1e14501a3af5e3 | 选点页面: https://wloc.guol.ccwu.cc"
+author: WLOC Community / zhangbao20-icloud
+homepage: https://github.com/zhangbao20-icloud/WLOC
+icon: https://raw.githubusercontent.com/zhangbao20-icloud/WLOC/refs/heads/main/wloc.jpg
+category: Tools
+
+http:
+  mitm:
+    - "gs-loc.apple.com"
+    - "gs-loc-cn.apple.com"
+    - "gsp-ssl.ls.apple.com"
+    - "bluedot.is.autonavi.com"
+    - "bluedot.is.autonavi.com.gds.alibabadns.com"
+  script:
+    - match: ^https?:\/\/(?:gs-loc(?:-cn)?\.apple\.com|gsp-ssl\.ls\.apple\.com|bluedot\.is\.autonavi\.com(?:\.gds\.alibabadns\.com)?)\/clls\/wloc
+      name: WLOC.Location
+      type: response
+      require-body: true
+      binary-mode: true
+      max-size: 0
+      timeout: 30
+      argument: longitude=113.94114&latitude=22.544577&accuracy=25&randomRadius=0&logLevel=info
+    - match: ^https?:\/\/gs-loc(-cn)?\.apple\.com\/wloc-settings\/save
+      name: WLOC.Settings
+      type: request
+      require-body: false
+      timeout: 10
+
+script-providers:
+  WLOC.Location:
+    url: https://raw.githubusercontent.com/zhangbao20-icloud/WLOC/refs/heads/main/dist/wloc.js
+    interval: 86400
+  WLOC.Settings:
+    url: https://raw.githubusercontent.com/zhangbao20-icloud/WLOC/refs/heads/main/dist/wloc-settings.js
+    interval: 86400
